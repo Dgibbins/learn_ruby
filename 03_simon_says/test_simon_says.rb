@@ -22,17 +22,17 @@ class TestSimonSays < MiniTest::Test
   def test_shout_multiple_words
     assert_equal "HELLO WORLD", shout("hello world")
   end
-
-  def test_repeat
-    assert_equal "hello hello", repeat("hello")
-  end
+  #
+  # def test_repeat
+  # end
 
   # Wait a second! How can you make the "repeat" method
   # take one *or* two arguments?
   #
-  # def repeat(string, num = 2)
-  #   # your code here
-  # end
+  def test_repeat_multiple_timesrepeat
+    # your code here
+    assert_equal "hello hello", repeat("hello", 2)
+  end
   #
   # The important part is num = 2. What happens is if a num isn't given,
   # then num will fallback on 2, i.e. it has a default value of 2.
